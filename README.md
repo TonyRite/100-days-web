@@ -6,3 +6,5 @@ Created an image slider , a simple one using html ,css and javascript
 Created a to do list using html css and javascript in basic way
 <h2><b> DAY THREE </B></h2>
 Created a music player ,not done yet
+<h2><b> DAY FOUR </B></h2>
+Created a word game
