@@ -1,5 +1,6 @@
+//event listener on loading of the site
 window.addEventListener('load',init);
-
+//levels  based on time
 const levels = {
     easy: 5,
     medium: 3,
@@ -20,21 +21,50 @@ const timeDisplay = document.querySelector('#time');
 const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
 
-
+//array of words 
 const words =[
     'hat',
     'car',
     'key',
     'three',
     'love',
-    'scam'
+    'scam',
+    'lily',
+    'Mariana',
+    'ressy',
+    'graca',
+    'sasha',
+    'Fatma',
+    'Monroe',
+    'Amon',
+    'Leo',
+    'betty',
+    'Glory',
+    'Leonard',
+    'Eucalyptus',
+    'xenophobia',
+    'Rite',
+    'Amonnnengha',
+    'Abdulaziz',
+    'Prom',
+    'harrasment',
+    'Laurencia',
+    'Haruni',
+    'Brighton',
+    'Stackmafia',
+    'react',
+    'Javascript',
+    'Toshiba',
+    'legend',
+    'xylophone'
 ]
-
+// the init function
 function init(){
-
+    
     seconds.innerHTML = currentLevel;
+    //calls the show words function
     showWord(words);
-
+    //event listenet to track word input in a given period of time. and call start match simulteneously
     wordInput.addEventListener('input',startMatch);
     setInterval(countdown,1000);
     setInterval(checkStatus,50);
@@ -65,7 +95,7 @@ function matchWords(){
               return false;
           }
 }
-
+//the show words function uses random numbers to pick words from an array of words
 function showWord(words){
     randIndex = Math.floor(Math.random()*words.length);
     currentWord.innerHTML = words[randIndex];
