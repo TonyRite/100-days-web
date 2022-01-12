@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+.content{
+    padding-top: 100px;
+}
+.content label{
+    font-weight: bold;
+    font-size: 22px;
+}
+.content input[type="text"]{
+    width: 280px;
+    height: 45px;
+    padding-left: 17px;
+    font-size: 17px;
+    border-radius: 25px;
+    outline: none;
+    transition: .2s ease;
+    border: 1px solid black;
+}
+input[type="text"]:focus{
+    border: 2px solid rgb(9, 180, 9);
+}
+input[type="submit"]{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 13px 29px;
+    border-radius: 25px;
+    background: rgb(149, 180, 9);
+    margin: 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+.to-do{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.to-do div{
+    display: flex;
+    max-width: 320px;
+    height: 40px;
+    margin: 15px 80px;
+    align-items: center;
+}
+.to-do div > li{
+    margin: 15px 20px;
+    list-style: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.to-do button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 9px 13px;
+    border-radius: 25px;
+    background: rgb(223, 21, 21);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+
